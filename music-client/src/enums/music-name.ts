@@ -1,0 +1,1 @@
+export const MUSICNAME = "个人网站";
