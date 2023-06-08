@@ -6,6 +6,7 @@ import { singerStyle } from "./singer";
 import { SONGSTYLE } from "./songList";
 import { RouterName } from "./router-name";
 import { validatePassword, SignInRules, SignUpRules } from "./validate";
+import {picList} from "@/enums/picture";
 
 export {
   AREA,
@@ -21,4 +22,5 @@ export {
   validatePassword,
   SignInRules,
   SignUpRules,
+  picList,
 };
