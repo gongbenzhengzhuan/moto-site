@@ -6,7 +6,7 @@ import store from "./store";
 import "element-plus/dist/index.css";
 import "./assets/css/index.scss";
 import "./assets/icons/index.js";
-
+import * as echarts from "./utils/echarts";
 import { ComponentCustomProperties } from "vue";
 import { Store } from "vuex";
 declare module "@vue/runtime-core" {
@@ -18,5 +18,6 @@ declare module "@vue/runtime-core" {
     $store: Store<State>;
   }
 }
-
-createApp(App).use(store).use(router).use(ElementPlus).mount("#app");
+const app = createApp(App)
+app.config.globalProperties.$echarts = echarts
+app.use(store).use(router).use(ElementPlus).mount("#app");

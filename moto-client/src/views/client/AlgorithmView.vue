@@ -1,17 +1,25 @@
 <template>
-  <h2>相似度接口服务</h2>
-  <div id="text">
-    原始文本：<input type="text" placeholder="原始文本" v-model="productInfo.textFirst">
-    比较文本：<input type="text" placeholder="比较文本" v-model="productInfo.textSecond">
-    <el-button type="info" size="small" @click="TextDiff()">查看相似度</el-button>
-    <span>相似度：{{ textSimilarity }}</span>
-  </div>
-  <br/><br/>
-  <h2>关键词接口服务</h2>
-  <div id="keyword">
-    文本：<input type="text" placeholder="原始文本" v-model="productInfo.content">
-    <el-button type="info" size="small" @click="keywordFunction()">查看关键词</el-button>
-    <span>关键词：{{ textKeyword }}</span>
+  <div class="common-layout">
+    <el-container>
+      <el-header></el-header>
+      <el-main>
+        <h2>相似度接口服务</h2>
+        <div id="text">
+          原始文本：<input type="text" placeholder="原始文本" v-model="productInfo.textFirst">
+          比较文本：<input type="text" placeholder="比较文本" v-model="productInfo.textSecond">
+          <el-button type="info" size="small" @click="TextDiff()">查看相似度</el-button>
+          <span>相似度：{{ textSimilarity }}</span>
+        </div>
+        <br/><br/>
+        <h2>关键词接口服务</h2>
+        <div id="keyword">
+          文本：<input type="text" placeholder="原始文本" v-model="productInfo.content">
+          <el-button type="info" size="small" @click="keywordFunction()">查看关键词</el-button>
+          <span>关键词：{{ textKeyword }}</span>
+        </div>
+      </el-main>
+      <el-footer></el-footer>
+    </el-container>
   </div>
 </template>
 

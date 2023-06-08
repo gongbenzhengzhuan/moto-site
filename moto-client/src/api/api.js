@@ -28,6 +28,13 @@ export function getKeyword (content) {
     })
 }
 
+export function getPic (content) {
+    return request({
+        url: ''+content,
+        method: 'GET',
+    })
+}
+
 export const getArticleDiff=(data)=> {
     return request({
         url: '/vue-project/algorithm/editDistance',

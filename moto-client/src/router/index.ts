@@ -102,6 +102,16 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/client/MainHomeView.vue')
       },
       {
+        path: '/injectEchartView',
+        name: 'injectEchartView',
+        component: () => import(/* webpackChunkName: "about" */ '../views/client/InjectEchartView.vue')
+      },
+      {
+        path: '/newsStatistic',
+        name: 'newsStatistic',
+        component: () => import(/* webpackChunkName: "about" */ '../views/client/NewsStatistic.vue')
+      },
+      {
         path: "/setting",
         name: "setting",
         meta: {
