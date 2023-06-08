@@ -15,6 +15,7 @@ export const enum NavName {
   News = "摩托车新闻",
   Product = "产品展示厅",
   MainHome = "服务理念",
+  ScrollPic = "滚动图片",
 }
 
 // 左侧导航栏
@@ -47,10 +48,14 @@ export const HEADERNAVLIST = [
     name: NavName.Product,
     path: RouterName.Product,
   },
-  {
-    name: NavName.UserCrud,
-    path: RouterName.UserCrud,
-  },
+  // {
+  //   name: NavName.ScrollPic,
+  //   path: RouterName.ScrollPic,
+  // },
+  // {
+  //   name: NavName.UserCrud,
+  //   path: RouterName.UserCrud,
+  // },
 ];
 
 // 右侧导航栏

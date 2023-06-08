@@ -1,12 +1,20 @@
 <template>
   <div id="look">
   <div>闪亮登场</div>
-  <div class="demo-image">
-    <div v-for="fit in fits" :key="fit" class="block">
-      <span class="demonstration">{{ fit }}</span>
-      <el-image style="width: 100px; height: 100px" :src="url" :fit="fit" />
+    <div class="block text-center" m="t-4">
+      <el-carousel trigger="click" height="150px">
+        <el-carousel-item v-for="item in cars" :key="item" :src="url">
+          <h3 class="small justify-center" text="2xl">{{ item }}</h3>
+        </el-carousel-item>
+      </el-carousel>
     </div>
-  </div>
+
+<!--  <div class="demo-image">-->
+<!--    <div v-for="fit in fits" :key="fit" class="block">-->
+<!--      <span class="demonstration">{{ fit }}</span>-->
+<!--      <el-image style="width: 100px; height: 100px" :src="url" :fit="fit" />-->
+<!--    </div>-->
+<!--  </div>-->
   <br/><br/>
   <div>踏板车</div>
   <div class="demo-image__lazy">
@@ -26,6 +34,7 @@
 </template>
 
 <script lang="ts" setup>
+const cars = ['复古车', '太子车', '踏板车', '赛车', '街车']
 const fits = ['填充', '包含', '覆盖', '局部', '缩小']
 const url =
     'https://upload.newmotor.com.cn/newmotor_newimg/UploadFiles/2021-11/202111191449460832_S.jpg';
@@ -86,5 +95,41 @@ const urls_halei = [
 
 #look {
   text-align: center;
+}
+
+/*.el-carousel__item h3 {*/
+/*  color: #475669;*/
+/*  opacity: 0.75;*/
+/*  line-height: 200px;*/
+/*  margin: 0;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.el-carousel__item:nth-child(2n) {*/
+/*  background-color: #99a9bf;*/
+/*}*/
+
+/*.el-carousel__item:nth-child(2n + 1) {*/
+/*  background-color: #d3dce6;*/
+/*}*/
+
+.demonstration {
+  color: var(--el-text-color-secondary);
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  opacity: 0.75;
+  line-height: 150px;
+  margin: 0;
+  text-align: center;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
 }
 </style>

@@ -19,4 +19,5 @@ export const enum RouterName {
   News = "/newsView",
   Product = "/productView",
   MainHome = "/",
+  ScrollPic = "/scrollPicView",
 }
