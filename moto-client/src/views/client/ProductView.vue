@@ -10,10 +10,14 @@
               <el-collapse-item title="音乐网站" name="1" id = "look">
                 <div> 请扫码进入！</div>
                 <img src="http://101.37.117.226:9090/wdhcr/%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7v3qUvGaLweXRbw4%2F20230605%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230605T010621Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=42aab690099ef6385331495fc1550e98caf5cbff066dadbc4d6d527f868ef6a6" width="160" height="160">
+                <br/><br/>
+                <a href="http://gongben.top/music/front" target="_blank" rel="nexus">音乐网站</a>
               </el-collapse-item>
               <el-collapse-item title="若依网站" name="2">
                 <div> 请扫码进入！</div>
                 <img src="http://101.37.117.226:9090/wdhcr/%E8%8B%A5%E4%BE%9D%E7%BD%91%E7%AB%99?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7v3qUvGaLweXRbw4%2F20230605%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230605T010524Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=270130c1a80aaa0aec5c139d856e75da16115e8736a790aa22d9bb8d8d701002" width="160" height="160">
+                <br/><br/>
+                <a href="http://82.156.135.173:20712/ruoyi/front" target="_blank" rel="nexus">若依网站</a>
               </el-collapse-item>
               <el-collapse-item title="书网站" name="3">
                 <div> 请扫码进入！</div>
@@ -22,6 +26,8 @@
               <el-collapse-item title="个人网站" name="4">
                 <div> 请扫码进入！</div>
                 <img src="http://101.37.117.226:9090/wdhcr/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7v3qUvGaLweXRbw4%2F20230605%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230605T010346Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b4622892fea342b8bb3725509d80d3d2d833e71164770165756d32d15b73b0d8" width="160" height="160">
+                <br/><br/>
+                <a href="http://82.156.135.173:20712/vue-project/front/#/" target="_blank" rel="nexus">个人网站</a>
               </el-collapse-item>
               <el-collapse-item title="微信公众号" name="5">
                 <div> 请扫码进入！</div>
@@ -42,6 +48,14 @@
               <el-collapse-item title="支付宝小程序" name="9">
                 <div> 请扫码进入！</div>
                 <img src="http://101.37.117.226:9090/wdhcr/%E5%B0%8F%E6%B3%A5%E9%B3%85%E5%95%86%E5%9F%8E?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7v3qUvGaLweXRbw4%2F20230605%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230605T012031Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=273679a773f09445766956c7dc37b551392e2ca3fc874a463b523671b07c6cdd" width="160" height="160">
+              </el-collapse-item>
+              <el-collapse-item title="管理系统-前端1" name="10">
+                <br/><br/>
+                <a href="http://82.156.135.173:20712/vue-vite-admin/front" target="_blank" rel="nexus">管理系统-前端1</a>
+              </el-collapse-item>
+              <el-collapse-item title="管理系统-前端2" name="11">
+                <br/><br/>
+                <a href="http://82.156.135.173:20712/vue3-system-template/front" target="_blank" rel="nexus">管理系统-前端2</a>
               </el-collapse-item>
             </el-collapse>
           </div>
