@@ -17,6 +17,7 @@ export const enum NavName {
   MainHome = "服务理念",
   ScrollPic = "滚动图片",
   Video = "摩托视频",
+  HelloWorld ="主题色",
 }
 
 // 左侧导航栏
@@ -53,6 +54,10 @@ export const HEADERNAVLIST = [
     name: NavName.Product,
     path: RouterName.Product,
   },
+  // {
+  //   name: NavName.HelloWorld,
+  //   path: RouterName.HelloWorld,
+  // },
   // {
   //   name: NavName.ScrollPic,
   //   path: RouterName.ScrollPic,

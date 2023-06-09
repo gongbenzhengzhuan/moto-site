@@ -1,15 +1,22 @@
 <template>
+
   <div class="yin-header">
     <!--图标-->
     <div class="header-logo" @click="goPage()">
       <yin-icon :icon="iconList.ERJI"></yin-icon>
       <span>{{ musicName }}</span>
     </div>
+    <!--页面主题色-->
+    <div :class="{ dark: isDark }">
     <yin-header-nav class="yin-header-nav" :styleList="headerNavList" :activeName="activeNavName" @click="goPage"></yin-header-nav>
+    <button @click="toggleTheme">主题色</button>
+    </div>
     <!--搜索框-->
     <div class="header-search">
       <el-input placeholder="搜索" :prefix-icon="Search" v-model="keywords" @keyup.enter="goSearch()" />
     </div>
+
+
     <!--设置-->
     <yin-header-nav v-if="!token" :styleList="signList" :activeName="activeNavName" @click="goPage"></yin-header-nav>
     <el-dropdown class="user-wrap" v-if="token" trigger="click">
@@ -33,12 +40,23 @@ import mixin from "@/mixins/mixin";
 import { HEADERNAVLIST, SIGNLIST, MENULIST, Icon, MUSICNAME, RouterName, NavName } from "@/enums";
 import { HttpManager } from "@/api";
 
+import {
+  useDark
+} from '@/utils/useDark'
+
+
 export default defineComponent({
   components: {
     YinIcon,
     YinHeaderNav,
   },
   setup() {
+    const dark = useDark()
+
+    const isDark = ref(dark.isDark)
+    const toggleTheme = () => {
+      dark.toggle()
+    }
     const { proxy } = getCurrentInstance();
     const store = useStore();
     const { changeIndex, routerManager } = mixin();
@@ -102,6 +120,8 @@ export default defineComponent({
       goPage,
       goMenuList,
       goSearch,
+      isDark,
+      toggleTheme,
       attachImageUrl: HttpManager.attachImageUrl,
     };
   },
@@ -192,5 +212,11 @@ export default defineComponent({
     margin-right: $header-user-margin;
     cursor: pointer;
   }
+}
+
+.dark {
+  background-color: #79bbff;
+  /* red */
+  color: #fff;
 }
 </style>
