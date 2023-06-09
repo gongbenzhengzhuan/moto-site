@@ -117,6 +117,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/client/ScrollPicView.vue')
       },
       {
+        path: '/videoView',
+        name: 'videoView',
+        component: () => import(/* webpackChunkName: "about" */ '../views/client/VideoView.vue')
+      },
+      {
         path: "/setting",
         name: "setting",
         meta: {

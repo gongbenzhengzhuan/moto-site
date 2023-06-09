@@ -9,6 +9,11 @@ import "./assets/icons/index.js";
 import * as echarts from "./utils/echarts";
 import { ComponentCustomProperties } from "vue";
 import { Store } from "vuex";
+import vue3videoPlay from 'vue3-video-play' // 引入组件
+import 'vue3-video-play/dist/style.css' // 引入css
+
+
+
 declare module "@vue/runtime-core" {
   interface State {
     count: number;
@@ -19,5 +24,6 @@ declare module "@vue/runtime-core" {
   }
 }
 const app = createApp(App)
+app.use(vue3videoPlay)
 app.config.globalProperties.$echarts = echarts
 app.use(store).use(router).use(ElementPlus).mount("#app");

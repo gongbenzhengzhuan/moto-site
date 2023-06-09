@@ -20,4 +20,5 @@ export const enum RouterName {
   Product = "/productView",
   MainHome = "/",
   ScrollPic = "/scrollPicView",
+  Video = "/videoView",
 }
