@@ -22,4 +22,5 @@ export const enum RouterName {
   ScrollPic = "/scrollPicView",
   Video = "/videoView",
   HelloWorld = "/helloWorld",
+  Canvas = "/canvas",
 }

@@ -20,13 +20,8 @@
 
 <script lang="ts">
 import { defineComponent, readonly } from "vue";
-import ContactUs from "@/views/footer/ContactUs.vue";
-import AboutMe from "@/views/footer/AboutMe.vue";
-import NoReponsibility from "@/views/footer/NoReponsibility.vue";
-import UserConsult from "@/views/footer/UserConsult.vue";
 
 export default defineComponent({
-  components: {UserConsult, NoReponsibility, AboutMe, ContactUs},
   setup() {
     const footerList = readonly([
       // "关于 | 帮助 | 条款 | 反馈",

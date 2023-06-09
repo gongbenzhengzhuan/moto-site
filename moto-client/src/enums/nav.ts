@@ -18,6 +18,7 @@ export const enum NavName {
   ScrollPic = "滚动图片",
   Video = "摩托视频",
   HelloWorld ="主题色",
+  Canvas = "钟表",
 }
 
 // 左侧导航栏
@@ -38,6 +39,10 @@ export const HEADERNAVLIST = [
     name: NavName.Video,
     path: RouterName.Video,
   },
+  // {
+  //   name: NavName.Canvas,
+  //   path: RouterName.Canvas,
+  // },
   // {
   //   name: NavName.SongSheet,
   //   path: RouterName.SongSheet,
