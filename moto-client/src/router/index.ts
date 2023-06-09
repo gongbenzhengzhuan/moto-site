@@ -122,6 +122,26 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/client/VideoView.vue')
       },
       {
+        path: '/aboutMe',
+        name: 'aboutMe',
+        component: () => import(/* webpackChunkName: "about" */ '../views/footer/AboutMe.vue')
+      },
+      {
+        path: '/contactUs',
+        name: 'contactUs',
+        component: () => import(/* webpackChunkName: "about" */ '../views/footer/ContactUs.vue')
+      },
+      {
+        path: '/noReponsibility',
+        name: 'noReponsibility',
+        component: () => import(/* webpackChunkName: "about" */ '../views/footer/NoReponsibility.vue')
+      },
+      {
+        path: '/userConsult',
+        name: 'userConsult',
+        component: () => import(/* webpackChunkName: "about" */ '../views/footer/UserConsult.vue')
+      },
+      {
         path: "/setting",
         name: "setting",
         meta: {

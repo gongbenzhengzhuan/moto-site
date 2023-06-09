@@ -1,5 +1,17 @@
 <template>
   <div class="yin-footer">
+    <div class="footer ifooter">
+      <p>
+        <a target="_blank" href="http://localhost:9002/#/contactUs">联系我们</a> |
+        <a target="_blank" href="http://localhost:9002/#/aboutMe">关于我们</a> |
+        <a target="_blank" href="http://localhost:9002/#/noReponsibility">免责声明</a> |
+        <a target="_blank" href="http://localhost:9002/#/userConsult">用户协议</a>
+<!--        <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/contactUs">联系我们</a> |
+        <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/aboutMe">关于我们</a> |
+        <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/noReponsibility">免责声明</a> |
+        <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/userConsult">用户协议</a>-->
+      </p>
+    </div>
     <p v-for="(item, index) in footerList" :key="index">
       {{ item }}
     </p>
@@ -8,11 +20,16 @@
 
 <script lang="ts">
 import { defineComponent, readonly } from "vue";
+import ContactUs from "@/views/footer/ContactUs.vue";
+import AboutMe from "@/views/footer/AboutMe.vue";
+import NoReponsibility from "@/views/footer/NoReponsibility.vue";
+import UserConsult from "@/views/footer/UserConsult.vue";
 
 export default defineComponent({
+  components: {UserConsult, NoReponsibility, AboutMe, ContactUs},
   setup() {
     const footerList = readonly([
-      "关于 | 帮助 | 条款 | 反馈",
+      // "关于 | 帮助 | 条款 | 反馈",
       "Copyright © 2023 dzl",
       "京ICP备2023013015号 | https://beian.miit.gov.cn",
     ]);
