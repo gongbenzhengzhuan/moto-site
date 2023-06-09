@@ -7,6 +7,8 @@
       <el-container>
       <el-aside width="200px">
         <inject-echart-view></inject-echart-view>
+        <div-echarts-view></div-echarts-view>
+        <china-map-view></china-map-view>
         </el-aside>
       <el-main>
         <div id="look">
@@ -23,9 +25,11 @@
 <script>
 import InjectEchartView from "@/views/client/InjectEchartView";
 import TableDataView from "@/views/client/TableDataView";
+import DivEchartsView from "@/views/echarts/DivEchartsView";
+import ChinaMapView from "@/views/echarts/ChinaMapView";
 export default {
   name: "NewsView",
-  components: {TableDataView, InjectEchartView}
+  components: {ChinaMapView, DivEchartsView, TableDataView, InjectEchartView}
 }
 </script>
 

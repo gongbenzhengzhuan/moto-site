@@ -5,7 +5,8 @@
         <a target="_blank" href="http://localhost:9002/#/contactUs">联系我们</a> |
         <a target="_blank" href="http://localhost:9002/#/aboutMe">关于我们</a> |
         <a target="_blank" href="http://localhost:9002/#/noReponsibility">免责声明</a> |
-        <a target="_blank" href="http://localhost:9002/#/userConsult">用户协议</a>
+        <a target="_blank" href="http://localhost:9002/#/userConsult">用户协议</a> |
+        <a target="_blank" href="https://cybermap.kaspersky.com/cn">地图</a>
 <!--        <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/contactUs">联系我们</a> |
         <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/aboutMe">关于我们</a> |
         <a target="_blank" href="http://82.156.135.173:20712/moto/client/front/#/noReponsibility">免责声明</a> |
