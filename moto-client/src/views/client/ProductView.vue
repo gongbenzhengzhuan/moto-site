@@ -7,6 +7,13 @@
 
           <div class="demo-collapse" id="text">
             <el-collapse v-model="activeNames" @change="handleChange">
+              <el-collapse-item title="离线数仓方案" name="12">
+                <div>微量级：mysql+davinci+xxjob</div>
+                <br/><br/>
+                <div>轻量级：hive+davinci+azkaban</div>
+                <br/><br/>
+                <a href="http://81.70.71.16:8092/" target="_blank" rel="nexus">离线数仓方案</a>
+              </el-collapse-item>
               <el-collapse-item title="音乐网站" name="1" id = "look">
                 <div> 请扫码进入！</div>
                 <img src="http://101.37.117.226:9090/wdhcr/%E9%9F%B3%E4%B9%90%E7%BD%91%E7%AB%99?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7v3qUvGaLweXRbw4%2F20230605%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230605T010621Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=42aab690099ef6385331495fc1550e98caf5cbff066dadbc4d6d527f868ef6a6" width="160" height="160">

@@ -17,10 +17,14 @@
     <a href="https://v.youku.com/v_nextstage/id_cc00e332962411de83b1.html?spm=a2hja.12701310.filter.454&s=cc00e332962411de83b1"
        target="_blank" rel="nexus">雌雄大盗</a>
     <br/><br/>
-    <a href="https://v.youku.com/v_nextstage/id_cc170b1c962411de83b1.html?spm=a2hja.12701310.filter.27&s=cc170b1c962411de83b1"
-       target="_blank" rel="nexus">生活大爆炸</a>
     <br/><br/>
-    <div>听力书</div>
+    <div>邮件</div>
+    <br/><br/>
+    <a href="https://wenku.so.com/d/d13cac100407eb4340e207137c703974"
+       target="_blank" rel="nexus">英语邮件</a>
+    <br/><br/>
+    <a href="https://bbs.fobshanghai.com/viewthread.php?tid=7494406&extra=&page=1"
+       target="_blank" rel="nexus">真实邮件-真实场景才有用</a>
   </div>
 </template>
 
