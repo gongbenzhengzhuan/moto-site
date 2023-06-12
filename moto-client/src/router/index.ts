@@ -102,6 +102,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/client/MainHomeView.vue')
       },
       {
+        path: '/englishView',
+        name: 'englishView',
+        component: () => import(/* webpackChunkName: "about" */ '../views/client/EnglishView.vue')
+      },
+      {
         path: '/injectEchartView',
         name: 'injectEchartView',
         component: () => import(/* webpackChunkName: "about" */ '../views/client/InjectEchartView.vue')

@@ -23,4 +23,5 @@ export const enum RouterName {
   Video = "/videoView",
   HelloWorld = "/helloWorld",
   Canvas = "/canvas",
+  English = "/englishView",
 }

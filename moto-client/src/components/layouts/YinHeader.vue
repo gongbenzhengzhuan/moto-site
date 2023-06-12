@@ -8,7 +8,7 @@
     </div>
     <!--页面主题色-->
     <div :class="{ dark: isDark }">
-    <yin-header-nav class="yin-header-nav" :styleList="headerNavList" :activeName="activeNavName" @click="goPage"></yin-header-nav>
+    <yin-header-nav class="yin-header-nav" :styleList="routerpath" :activeName="activeNavName" @click="goPage"></yin-header-nav>
     <button @click="toggleTheme">主题色</button>
     </div>
     <!--搜索框-->
@@ -31,7 +31,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, getCurrentInstance, computed, reactive } from "vue";
+import {defineComponent, ref, getCurrentInstance, computed, reactive, onBeforeMount} from "vue";
 import { Search } from "@element-plus/icons-vue";
 import { useStore } from "vuex";
 import YinIcon from "./YinIcon.vue";
@@ -70,8 +70,49 @@ export default defineComponent({
     });
     const keywords = ref("");
     const activeNavName = computed(() => store.getters.activeNavName);
+    const routerpath = computed(() => store.getters.routerpath);
     const userPic = computed(() => store.getters.userPic);
     const token = computed(() => store.getters.token);
+
+    const route = [
+      {
+        name: NavName.MainHome,
+        path: RouterName.MainHome,
+      },
+      {
+        name: NavName.English,
+        path: RouterName.English,
+      },
+      {
+        name: NavName.News,
+        path: RouterName.News,
+      },
+      {
+        name: NavName.MotoPic,
+        path: RouterName.MotoPic,
+      },
+      {
+        name: NavName.Video,
+        path: RouterName.Video,
+      },
+      {
+        name: NavName.Algorithm,
+        path: RouterName.Algorithm,
+      },
+      {
+        name: NavName.Product,
+        path: RouterName.Product,
+      },
+    ]
+
+    function setRoute(){
+      proxy.$store.commit("setRouterpath", route);
+    }
+
+    onBeforeMount(() => {
+      setRoute()
+      console.log("DOM即将挂载");
+    })
 
     function goPage(path, name) {
       if (!path && !name) {
@@ -114,6 +155,7 @@ export default defineComponent({
       iconList,
       keywords,
       activeNavName,
+      routerpath,
       userPic,
       token,
       Search,
