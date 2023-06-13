@@ -103,6 +103,10 @@ export default defineComponent({
         name: NavName.Product,
         path: RouterName.Product,
       },
+      {
+        name: NavName.MyHobby,
+        path: RouterName.MyHobby,
+      },
     ]
 
     function setRoute(){

@@ -20,6 +20,7 @@ export const enum NavName {
   HelloWorld ="主题色",
   Canvas = "钟表",
   English = "日常英语",
+  MyHobby = "艺术书架",
 }
 
 // 左侧导航栏
