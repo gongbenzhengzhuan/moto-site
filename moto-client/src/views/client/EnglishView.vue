@@ -1,5 +1,9 @@
 <template>
   <div id="look">
+    <div><a href="http://101.37.117.226:9090/wdhcr/%E4%B9%90talk" target="_blank" rel="nexus">乐talk</a></div>
+    <br/><br/>
+    <div><a>乐Talk英语，致力打造母语式学习体验，AI智能对话，随时随地练习地道口语。欢迎下载体验，当前完全免费，超好的福利！</a></div>
+    <br/><br/>
     <div>日常视频
       <br/><br/>
       <a href="https://haokan.baidu.com/v?vid=5822979698691391583" target="_blank" rel="nexus">奥巴马2008年就职演讲</a>

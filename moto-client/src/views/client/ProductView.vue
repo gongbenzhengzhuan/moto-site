@@ -12,7 +12,7 @@
                 <br/><br/>
                 <div>轻量级：hive+davinci+azkaban</div>
                 <br/><br/>
-                <a href="http://81.70.71.16:8092/" target="_blank" rel="nexus">离线数仓方案</a>
+                <a href="http://81.70.71.16:8092/" target="_blank" rel="nexus">离线数仓方案(账号guest密码123456)</a>
               </el-collapse-item>
               <el-collapse-item title="音乐网站" name="1" id = "look">
                 <div> 请扫码进入！</div>
