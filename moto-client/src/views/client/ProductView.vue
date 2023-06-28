@@ -64,6 +64,11 @@
                 <br/><br/>
                 <a href="http://81.70.71.16:8092/" target="_blank" rel="nexus">离线数仓方案(账号guest密码123456)</a>
               </el-collapse-item>
+              <el-collapse-item title="权限管理" name="13">
+                <div>shiro权限管理</div>
+                <br/><br/>
+                <a href="http://81.70.71.16:8093/" target="_blank" rel="nexus">shiro权限管理(admin,123456)</a>
+              </el-collapse-item>
             </el-collapse>
           </div>
 

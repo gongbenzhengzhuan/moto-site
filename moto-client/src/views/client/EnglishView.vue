@@ -16,10 +16,10 @@
       <a href="http://www.iqiyi.com/w_19rsjdiw15.html" target="_blank" rel="nexus">奥巴马复旦演讲</a>
     </div>
     <br/><br/>
-    <div>电影</div>
+    <div>日常对话</div>
     <br/><br/>
-    <a href="https://v.youku.com/v_nextstage/id_cc00e332962411de83b1.html?spm=a2hja.12701310.filter.454&s=cc00e332962411de83b1"
-       target="_blank" rel="nexus">雌雄大盗</a>
+    <a href="https://www.iqiyi.com/a_11l0g3lwgxx.html"
+       target="_blank" rel="nexus">老友记-屏蔽中文-反复听</a>
     <br/><br/>
     <br/><br/>
     <div>邮件</div>
